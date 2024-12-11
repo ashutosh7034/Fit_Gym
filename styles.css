@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9; /* Lighter background for better contrast */
+    background-color: #f9f9f9;
     color: #333;
     overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Vibrant gradient */
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: #fff;
     padding: 30px 0;
     text-align: center;
@@ -26,7 +26,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background-color: #333; /* Dark background for the nav bar */
+    background-color: #333;
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -51,11 +51,11 @@ nav {
 .nav-link:hover {
     background-color: #ff6f61;
     color: #fff;
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1);
 }
 
 nav a.active {
-    background-color: #ff416c; /* Active link color */
+    background-color: #ff416c;
     color: white;
     transform: scale(1.1);
 }
@@ -80,7 +80,7 @@ nav a.active {
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    filter: brightness(0.5); /* Subtle darkening effect */
+    filter: brightness(0.5);
 }
 
 .hero::before {
@@ -90,7 +90,7 @@ nav a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Overlay to enhance text visibility */
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -102,7 +102,7 @@ nav a.active {
     font-size: 4rem;
     margin-bottom: 20px;
     animation: fadeInDown 1.5s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero p {
@@ -134,7 +134,7 @@ section {
     animation: fadeInUp 1s ease;
     background: #fff;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -145,7 +145,7 @@ section:nth-child(even) {
 section h2 {
     margin-bottom: 20px;
     font-size: 2.8rem;
-    color: #ff416c; /* Highlighted color */
+    color: #ff416c;
 }
 
 section p {
@@ -448,5 +448,101 @@ footer p {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .hero a {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-card {
+        width: 45%;
+    }
+
+    .trainer-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero a {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .services li {
+        font-size: 1.1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    .trainer-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    .trainer-card {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        margin: 5px 0;
     }
 }
